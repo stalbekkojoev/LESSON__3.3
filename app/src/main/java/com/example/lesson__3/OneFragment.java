@@ -32,10 +32,6 @@ public class OneFragment extends Fragment {
         editText = view.findViewById(R.id.et_text);
         button = view.findViewById(R.id.btn_go);
         Bundle bundle = getArguments();
-        if (bundle.getString(KEY) !=null){
-            editText.setText(bundle.getString(KEY));
-        }
-
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
